@@ -22,6 +22,9 @@
         ".packages": true,
         "lib/generated_plugin_registrant.dart": true,
 
+        // Github
+        ".github/": true,
+
         // Project
         "lib/done.dart": true,
     }
