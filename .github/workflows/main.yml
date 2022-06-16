@@ -1,6 +1,5 @@
 name: Deploy to Github Pages
 
-
 on:
   push:
     branches: [ "main" ]
@@ -15,3 +14,4 @@ jobs:
       - uses: AlienKevin/flutter-gh-pages@v11
         with:
           webRenderer: canvaskit
+          baseHref: ${{ github.event.repository.name }}
