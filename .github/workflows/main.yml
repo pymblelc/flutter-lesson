@@ -14,4 +14,4 @@ jobs:
       - uses: AlienKevin/flutter-gh-pages@v11
         with:
           webRenderer: canvaskit
-          baseHref: ${{ github.event.repository.name }}
+          baseHref: /${{ github.event.repository.name }}/
