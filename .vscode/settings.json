@@ -26,6 +26,6 @@
         ".github/": true,
 
         // Project
-        "lib/done.dart": true,
+        "lib-final/": true,
     }
 }
