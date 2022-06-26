@@ -22,13 +22,13 @@ class _CounterPageState extends State<CounterPage> {
   }
 
   // This function increases our counter by `amount`
-  void Function() changeCounter(int? amount) {
+  void Function() changeCounter(int amount) {
     return () {
       setState(() {
-        if (amount != null) {
-          counter += amount;
-        } else {
+        if (amount == 0) {
           counter = 0;
+        } else {
+          counter += amount;
         }
       });
       storage.put("count", counter);
@@ -123,7 +123,7 @@ class _CounterPageState extends State<CounterPage> {
               ],
             ),
             ElevatedButton(
-              onPressed: changeCounter(null),
+              onPressed: changeCounter(0),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                   Color.fromARGB(255, 156, 124, 124),
